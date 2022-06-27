@@ -1,0 +1,110 @@
+.footer {
+  background-color: var(--background-color);
+}
+
+.footer__wrap {
+  display: flex;
+  padding-bottom: 60px;
+}
+
+.footer__contacts {
+  padding-top: 60px;
+  margin-right: 70px;
+}
+
+.footer__logo {
+  font-family: var(--font-family-raleway), sans-serif;
+  font-weight: var(--font-weight-bold);
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--main-title-color);
+}
+
+.footer__logo--color {
+  font-family: var(--font-family-raleway), sans-serif;
+  font-weight: var(--font-weight-bold);
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.footer__address {
+  margin-top: 20px;
+  font-style: normal;
+  font-size: var(--font-size-second);
+  line-height: 1.71;
+  color: var(--main-title-color);
+}
+
+.footer-connect__item {
+  margin-top: 9px;
+}
+
+.footer-connect__link {
+  font-size: var(--font-size-second);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-socials__grid {
+  padding-top: 72px;
+  margin-right: 93px;
+}
+
+.footer-socials__text {
+  font-size: var(--font-size-second);
+  line-height: 1.15;
+  letter-spacing: var(--letter-spacing-main);
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+
+.footer-mail__grid {
+  padding-top: 72px;
+}
+
+.footer-mail__title {
+  margin-bottom: 20px;
+  font-weight: var(--font-weight-bold);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: var(--letter-spacing-main);
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+
+.footer-mail__container {
+  display: flex;
+}
+
+.footer-mail__input {
+  position: relative;
+  padding-left: 16px;
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+  border: var(--border) rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: var(--border-radius-main);
+  background-color: transparent;
+  color: var(--main-title-color);
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    box-shadow: 0 0 0 30px var(--accent-color) inset;
+  }
+}
+
+.footer-mail__icon {
+  margin-left: 10px;
+}
