@@ -1,14 +1,24 @@
 .project__list-btn {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .project__item-btn {
-  margin-bottom: 50px;
-
-  &:not(:last-child) {
-    margin-right: 8px;
+  // margin-bottom: 50px;
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 8px) / 2);
   }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 16px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 32px) / 5);
+  }
+  // &:not(:last-child) {
+  //   margin-right: 8px;
+  // }
 }
 
 .project__btn {

@@ -11,19 +11,46 @@
   background-position: center;
   background-size: cover;
 
-  &__container {
-    padding-top: 200px;
-    padding-bottom: 200px;
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 15px) / 1);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bg-mobile.jpg);
   }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 1);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-bg-tablet.jpg);
+  }
+}
 
-  &__title {
-    margin-bottom: 30px;
-    font-weight: 900;
+.hero__container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  font-weight: 900;
+  // font-size: 44px;
+  // line-height: 1.36;
+  text-align: var(--text-align);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
-    text-align: var(--text-align);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--main-title-color);
   }
 }

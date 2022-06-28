@@ -1,20 +1,29 @@
 .team {
   background-color: #f5f4fa;
+}
+.team__title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: var(--text-align);
+  color: var(--second-title-color);
+}
 
-  &__title {
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: var(--text-align);
-    color: var(--second-title-color);
+.team__list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team__item {
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 15px) / 1);
   }
-
-  &__list {
-    display: flex;
-    margin-top: 50px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
   }
-
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 45px) / 4);
   }
 }
 
