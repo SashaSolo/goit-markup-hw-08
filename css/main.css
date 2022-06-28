@@ -119,6 +119,7 @@ body {
 }
 
 .footer-mail__btn {
+  margin-top: 20px;
   display: flex;
 }
 
@@ -434,6 +435,16 @@ body {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .nav__list {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
+}
 
 .nav__item:not(:last-child) {
   margin-right: 50px;
@@ -477,6 +488,27 @@ body {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .contacts__list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+}
 .contacts__item {
   margin-right: 30px;
 }
@@ -507,7 +539,7 @@ body {
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px), (max-width: 479px) {
   .hero {
     width: calc((100% - 15px) / 1);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mobile.jpg);
@@ -553,6 +585,7 @@ body {
 .features__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -628,6 +661,7 @@ body {
 
 .directions__list {
   display: flex;
+  justify-content: center;
   margin-top: 50px;
 }
 
@@ -658,6 +692,7 @@ body {
 
 .team {
   background-color: #f5f4fa;
+  margin-top: 94px;
 }
 
 .team__title {
@@ -671,29 +706,29 @@ body {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px), (max-width: 479px) {
   .team__item {
-    width: calc((100% - 15px) / 1);
+    width: calc((100% - 30px) / 1);
   }
 }
 @media screen and (min-width: 768px) {
   .team__item {
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
-    width: calc((100% - 45px) / 4);
+    width: calc((100% - 90px) / 4);
   }
 }
 
 .employee-card {
   background-color: var(--background-color-light);
-  width: 270px;
-  height: 428px;
+  width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -733,14 +768,29 @@ body {
 
 .customer__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
-.customer__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 320px), (max-width: 479px) {
+  .customer__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .customer__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .customer__link {
-  width: 170px;
+  width: 100%;
   height: 92px;
   display: flex;
   justify-content: center;
@@ -904,12 +954,24 @@ body {
 
 .footer__wrap {
   display: flex;
+  flex-direction: column;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 165px;
+  }
 }
 
 .footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 60px;
-  margin-right: 70px;
 }
 
 .footer__logo {
@@ -953,8 +1015,10 @@ body {
 }
 
 .footer-socials__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 72px;
-  margin-right: 93px;
 }
 
 .footer-socials__text {
@@ -968,8 +1032,15 @@ body {
 .footer-mail__grid {
   padding-top: 72px;
 }
+@media screen and (min-width: 768px) {
+  .footer-mail__grid {
+    margin-top: -165px;
+  }
+}
 
 .footer-mail__title {
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
   font-weight: var(--font-weight-bold);
   font-size: 14px;
@@ -979,15 +1050,10 @@ body {
   color: var(--main-title-color);
 }
 
-.footer-mail__container {
-  display: flex;
-}
-
 .footer-mail__input {
   position: relative;
   padding-left: 16px;
-  margin-right: 12px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: var(--border) rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
