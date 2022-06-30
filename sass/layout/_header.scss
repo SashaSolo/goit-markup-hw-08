@@ -12,12 +12,15 @@
   color: #000000;
   font-family: var(--font-family-raleway), sans-serif;
   font-weight: var(--font-weight-bold);
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: calc(28 / 24);
 }
 
 .header__logo {
-  margin-right: 94px;
+  margin-right: 88px;
+  @include desktop {
+    margin-right: 94px;
+  }
 }
 
 .logo--color {
@@ -77,18 +80,15 @@
   margin-left: auto;
 
   &__list {
-    display: flex;
-    align-items: center;
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-    @media screen and (min-width: 768px) {
+    display: none;
+
+    @include tablet {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 10px;
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -96,15 +96,15 @@
     }
   }
 
-  &__item {
-    margin-right: 30px;
-  }
+  // &__item {
+  //   // margin-right: 30px;
+  // }
 
   &__link {
     color: var(--main-text-color);
     font-weight: 500;
-    font-size: var(--font-size-second);
-    line-height: 1.15;
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.02em;
     transition-property: color;
     transition-duration: var(--transition-duration);
@@ -119,5 +119,7 @@
   &__icon {
     margin-right: 10px;
     fill: currentColor;
+    //   @include;
+    // }
   }
 }

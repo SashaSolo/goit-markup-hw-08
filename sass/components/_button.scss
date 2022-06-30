@@ -35,4 +35,7 @@
 .footer-mail__btn {
   margin-top: 20px;
   display: flex;
+  @include desktop {
+    margin-top: 0;
+  }
 }

@@ -1,8 +1,13 @@
 .features__section {
   padding-bottom: 0px;
+  margin-bottom: 60px;
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .features__list {
+  // width: 450px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -11,13 +16,13 @@
 
 .features__item {
   // flex-basis: calc(100% / 4);
-  @media screen and (min-width: 480px) {
-    width: calc((100% - 15px) / 1);
-  }
-  @media screen and (min-width: 768px) {
+  // @media screen and (min-width: 480px) {
+  // width: calc((100% - 15px) / 1);
+
+  @include tablet {
     width: calc((100% - 30px) / 2);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc((100% - 90px) / 4);
   }
   // &:not(:last-child) {
@@ -55,6 +60,7 @@
 .features__title {
   font-size: var(--font-size-second);
   line-height: 1.14;
+  letter-spacing: var(--letter-spacing-main);
   text-transform: uppercase;
   color: var(--second-title-color);
 }
@@ -63,5 +69,6 @@
   margin-top: 10px;
   font-size: var(--font-size-second);
   line-height: 1.71;
+  letter-spacing: var(--letter-spacing-main);
   color: var(--main-text-color);
 }
