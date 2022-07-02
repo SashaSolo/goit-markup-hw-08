@@ -165,8 +165,36 @@
                   class="employee-card__image"
                   target="_blank"
                   rel="noopener nofollow noreferrer"
-                  ><img src="images/designer.jpg" alt="Дизайнер" width="270"
-                /></a>
+                >
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/designer.jpg    1x,
+                        ./images/designer-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/designer-tablet.jpg    1x,
+                        ./images/designer-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/designer-mobile.jpg    1x,
+                        ./images/designer-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/designer-mobile.jpg"
+                      alt="Дизайнер"
+                      width="450"
+                    />
+                  </picture>
+                </a>
                 <div class="employee-card__info">
                   <h3 class="employee-card__name">Игорь Демьяненко</h3>
                   <p class="employee-card__position" lang="en">
@@ -246,11 +274,35 @@
                   class="employee-card__image"
                   target="_blank"
                   rel="noopener nofollow noreferrer"
-                  ><img
-                    src="images/developer.jpg"
-                    alt="Фронтэнд Разработчик"
-                    width="270"
-                /></a>
+                  ><picture>
+                    <source
+                      srcset="
+                        ./images/developer.jpg    1x,
+                        ./images/developer-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/developer-tablet.jpg    1x,
+                        ./images/developer-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/developer-mobile.jpg    1x,
+                        ./images/developer-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="images/developer-mobile.jpg"
+                      alt="Фронтэнд Разработчик"
+                      width="450"
+                    />
+                  </picture>
+                </a>
                 <div class="employee-card__info">
                   <h3 class="employee-card__name">Ольга Репина</h3>
                   <p class="employee-card__position" lang="en">
@@ -330,8 +382,34 @@
                   class="employee-card__image"
                   target="_blank"
                   rel="noopener nofollow noreferrer"
-                  ><img src="images/marketing.jpg" alt="Маркетинг" width="270"
-                /></a>
+                  ><picture>
+                    <source
+                      srcset="
+                        ./images/marketing.jpg    1x,
+                        ./images/marketing-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/marketing-tablet.jpg    1x,
+                        ./images/marketing-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/marketing-mobile.jpg    1x,
+                        ./images/marketing-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="images/marketing.jpg"
+                      alt="Маркетинг"
+                      width="450"
+                    /> </picture
+                ></a>
                 <div class="employee-card__info">
                   <h3 class="employee-card__name">Николай Тарасов</h3>
                   <p class="employee-card__position" lang="en">Marketing</p>
@@ -409,11 +487,31 @@
                   class="employee-card__image"
                   target="_blank"
                   rel="noopener nofollow noreferrer"
-                  ><img
-                    src="images/ui.jpg"
-                    alt="Дизайнер оформления"
-                    width="270"
-                /></a>
+                  ><picture>
+                    <source
+                      srcset="./images/ui.jpg 1x, ./images/ui-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/ui-tablet.jpg    1x,
+                        ./images/ui-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/ui-mobile.jpg    1x,
+                        ./images/ui-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="images/ui-mobile.jpg"
+                      alt="Дизайнер оформления"
+                      width="450"
+                    /> </picture
+                ></a>
                 <div class="employee-card__info">
                   <h3 class="employee-card__name">Михаил Ермаков</h3>
                   <p class="employee-card__position">UI Designer</p>
@@ -559,9 +657,9 @@
       </section>
     </main>
 
-      <!-- Футер -->
+    <!-- Футер -->
 
-      <footer class="footer">
+    <footer class="footer">
       <div class="container footer__wrap">
         <div class="footer__contacts">
           <a class="footer__logo link" href="./"
@@ -641,9 +739,9 @@
       </div>
     </footer>
 
-      <!--------------MODAL-WINDOW------------->
+    <!--------------MODAL-WINDOW------------->
 
-      <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg class="close-btn__icon" width="18" height="18">
@@ -738,8 +836,5 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-  </body>
-</html> -->
-    </main>
   </body>
 </html>

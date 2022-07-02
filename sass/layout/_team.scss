@@ -23,6 +23,7 @@
 }
 
 .team__item {
+  width: 100%;
   @include tablet {
     width: calc((100% - 60px) / 2);
   }
@@ -41,6 +42,7 @@
   &__info {
     padding-top: 30px;
     padding-bottom: 24px;
+
     @include desktop {
       padding-bottom: 30px;
     }

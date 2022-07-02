@@ -25,10 +25,10 @@
   <body>
     <!-- Шапка сайта -->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a class="logo header__logo link" href="./"
-          ><span class="logo__text--color link">Web</span>Studio</a
+          ><span class="logo logo--color link">Web</span>Studio</a
         >
         <nav class="nav">
           <ul class="nav__list list">
@@ -47,9 +47,9 @@
         </nav>
         <div class="contacts">
           <ul class="contacts__list list">
-            <li class="contacts__item contacts__item--mail">
+            <li class="contacts__item">
               <a class="contacts__link link" href="mailto:info@devstudio.com"
-                ><svg class="contacts__icon" width="16" height="12">
+                ><svg class="contacts__icon" width="14" height="10">
                   <use href="./images/icon.svg#icon-envelope"></use></svg
                 >info@devstudio.com</a
               >
@@ -58,7 +58,7 @@
               <a
                 class="contacts__item contacts__link link"
                 href="tel:+380961111111"
-                ><svg class="contacts__icon" width="10" height="16">
+                ><svg class="contacts__icon" width="10" height="14">
                   <use href="./images/icon.svg#icon-smartphone"></use></svg
                 >+38 096 111 11 11</a
               >
@@ -66,7 +66,7 @@
           </ul>
         </div>
       </div>
-    </header> -->
+    </header>
 
     <!-- Основной блок -->
 
@@ -74,7 +74,7 @@
       <div class="container">
         <!-- Кнопки -->
 
-        <!-- <h1 class="project__title visually-hidden">Список работ</h1>
+        <h1 class="project__title visually-hidden">Список работ</h1>
         <ul class="project__list-btn">
           <li class="project__item-btn">
             <button class="project__btn" type="button">Все</button>
@@ -91,7 +91,7 @@
           <li class="project__item-btn">
             <button class="project__btn" type="button">Маркетинг</button>
           </li>
-        </ul> -->
+        </ul>
 
         <!-- Постеры -->
 
@@ -100,19 +100,42 @@
             <div class="project-wrap">
               <a class="project-wrap__link link">
                 <div class="project-card">
-                  <img
-                    class="project-card__img"
-                    src="images/web-site-techcrack.jpg"
-                    alt="web-site-techcrack"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/web-site-techcrack.jpg    1x,
+                        ./images/web-site-techcrack-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web-site-techcrack-tablet.jpg    1x,
+                        ./images/web-site-techcrack-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web-site-techcrack-mobile.jpg    1x,
+                        ./images/web-site-techcrack-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project-card__img"
+                      src="images/web-site-techcrack-mobile.jpg"
+                      alt="web-site-techcrack"
+                      width="450"
+                    />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="card-about">
+                <div class="card-about card-about__padding">
                   <h2 class="card-about__title">Технокряк</h2>
                   <p class="card-about__text">Веб-сайт</p>
                 </div>
@@ -124,12 +147,35 @@
             <div class="project-wrap">
               <a class="project-wrap__link link"
                 ><div class="project-card">
-                  <img
-                    class="project-card__img"
-                    src="images/poster-basketball.jpg"
-                    alt="poster-basketball"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/poster-basketball.jpg    1x,
+                        ./images/poster-basketball-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/poster-basketball-tablet.jpg    1x,
+                        ./images/poster-basketball-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/poster-basketball-mobile.jpg    1x,
+                        ./images/poster-basketball-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project-card__img"
+                      src="images/poster-basketball-mobile.jpg"
+                      alt="poster-basketball"
+                      width="450"
+                    />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -150,12 +196,35 @@
             <div class="project-wrap">
               <a class="project-wrap__link link"
                 ><div class="project-card">
-                  <img
-                    class="project-card__img"
-                    src="images/app-restaurant.jpg"
-                    alt="app-restaurant"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/app-restaurant.jpg    1x,
+                        ./images/app-restaurant-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/app-restaurant-tablet.jpg    1x,
+                        ./images/app-restaurant-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/app-restaurant-mobile.jpg    1x,
+                        ./images/app-restaurant-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project-card__img"
+                      src="images/app-restaurant-mobile.jpg"
+                      alt="app-restaurant"
+                      width="450"
+                    />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -174,12 +243,35 @@
             <div class="project-wrap">
               <a class="project-wrap__link link"
                 ><div class="project-card">
-                  <img
-                    class="project-card__img"
-                    src="images/marketing-headphones.jpg"
-                    alt="marketing-headphones"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/marketing-headphones.jpg    1x,
+                        ./images/marketing-headphones-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/marketing-headphones-tablet.jpg    1x,
+                        ./images/marketing-headphones-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/marketing-headphones-mobile.jpg    1x,
+                        ./images/marketing-headphones-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project-card__img"
+                      src="images/marketing-headphones-mobile.jpg"
+                      alt="marketing-headphones"
+                      width="450"
+                    />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -200,12 +292,35 @@
             <div class="project-wrap">
               <a class="project-wrap__link link"
                 ><div class="project-card">
-                  <img
-                    class="project-card__img"
-                    src="images/app-boxes.jpg"
-                    alt="app-boxes"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/app-boxes.jpg    1x,
+                        ./images/app-boxes-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/app-boxes-tablet.jpg    1x,
+                        ./images/app-boxes-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/app-boxes-mobile.jpg    1x,
+                        ./images/app-boxes-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project-card__img"
+                      src="images/app-boxes-mobile.jpg"
+                      alt="app-boxes"
+                      width="450"
+                    />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -226,12 +341,35 @@
             <div class="project-wrap">
               <a class="project-wrap__link link"
                 ><div class="project-card">
-                  <img
-                    class="project-card__img"
-                    src="images/web-site-noborders.jpg"
-                    alt="web-site-noborders"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/web-site-noborders.jpg    1x,
+                        ./images/web-site-noborders-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web-site-noborders-tablet.jpg    1x,
+                        ./images/web-site-noborders-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web-site-noborders-mobile.jpg    1x,
+                        ./images/web-site-noborders-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project-card__img"
+                      src="images/web-site-noborders-mobile.jpg"
+                      alt="web-site-noborders"
+                      width="450"
+                    />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -252,12 +390,35 @@
             <div class="project-wrap">
               <a class="project-wrap__link link"
                 ><div class="project-card">
-                  <img
-                    class="project-card__img"
-                    src="images/design-book.jpg"
-                    alt="design-book"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/design-book.jpg    1x,
+                        ./images/design-book-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/design-book-tablet.jpg    1x,
+                        ./images/design-book-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/design-book-mobile.jpg    1x,
+                        ./images/design-book-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project-card__img"
+                      src="images/design-book-mobile.jpg"
+                      alt="design-book"
+                      width="450"
+                    />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -278,12 +439,35 @@
             <div class="project-wrap">
               <a class="project-wrap__link link"
                 ><div class="project-card">
-                  <img
-                    class="project-card__img"
-                    src="images/marketing-lab.jpg"
-                    alt="marketing-lab"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/marketing-lab.jpg    1x,
+                        ./images/marketing-lab-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/marketing-lab-tablet.jpg    1x,
+                        ./images/marketing-lab-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/marketing-lab-mobile.jpg    1x,
+                        ./images/marketing-lab-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project-card__img"
+                      src="images/marketing-lab-mobile.jpg"
+                      alt="marketing-lab"
+                      width="450"
+                    />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -304,12 +488,35 @@
             <div class="project-wrap">
               <a class="project-wrap__link link"
                 ><div class="project-card">
-                  <img
-                    class="project-card__img"
-                    src="images/app-business.jpg"
-                    alt="app-business"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/app-business.jpg    1x,
+                        ./images/app-business-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/app-business-tablet.jpg    1x,
+                        ./images/app-business-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/app-business-mobile.jpg    1x,
+                        ./images/app-business-mobile-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="project-card__img"
+                      src="images/app-business-mobile.jpg"
+                      alt="app-business"
+                      width="450"
+                    />
+                  </picture>
                   <p class="project-card__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -328,7 +535,7 @@
     </section>
     <!-- Футер -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__wrap">
         <div class="footer__contacts">
           <a class="footer__logo link" href="./"
@@ -406,6 +613,6 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>

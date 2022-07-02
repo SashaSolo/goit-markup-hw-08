@@ -30,8 +30,8 @@
 }
 
 .checkbox__custom {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: var(--letter-spacing-main);
   color: var(--main-text-color);
   display: flex;
@@ -53,8 +53,8 @@
 }
 
 .checkbox__agreement {
-  font-size: var(--font-size-second);
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: var(--letter-spacing-main);
   text-decoration-line: underline;
   color: var(--accent-color);

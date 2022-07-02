@@ -4,7 +4,6 @@
   &__container {
     display: flex;
     align-items: center;
-    height: 80px;
   }
 }
 
@@ -17,8 +16,18 @@
 }
 
 .header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin-right: 88px;
+
+  @include tablet {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   @include desktop {
+    margin-top: 24px;
+    margin-bottom: 25px;
     margin-right: 94px;
   }
 }
@@ -30,10 +39,7 @@
 .nav__list {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 480px) {
-    display: none;
-  }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 }
@@ -83,6 +89,8 @@
     display: none;
 
     @include tablet {
+      padding-top: 21px;
+      padding-bottom: 21px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -117,9 +125,13 @@
   }
 
   &__icon {
-    margin-right: 10px;
-    fill: currentColor;
-    //   @include;
-    // }
+    @include tablet {
+      margin-right: 8px;
+      fill: currentColor;
+    }
+    @include desktop {
+      margin-right: 10px;
+      fill: currentColor;
+    }
   }
 }
