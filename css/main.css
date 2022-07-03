@@ -84,7 +84,6 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -685,8 +684,8 @@ body {
 
 .mob-menu__soc-item:not(:last-child) {
   margin-right: 10px;
-  border-color: #000000;
-  border: #212121;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .hero .container {
