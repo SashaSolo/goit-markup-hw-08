@@ -295,6 +295,7 @@ body {
   top: 0;
   background-color: rgba(25, 28, 38, 0.476);
   transition: opacity 500ms, visibility 500ms;
+  overflow-y: auto;
 }
 
 .backdrop .is-hidden .modal {
@@ -323,6 +324,11 @@ body {
   border-radius: var(--border-radius-main);
   transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform 500ms;
+}
+@media screen and (max-height: 601px) {
+  .modal {
+    top: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -706,7 +712,11 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts .contacts__item--tell {
+    margin-left: 30px;
   }
 }
 .contacts__link {
