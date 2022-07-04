@@ -18,14 +18,17 @@
   padding: 6px 22px;
   margin-top: 0;
   margin-bottom: 0;
+
   font-family: inherit;
   font-weight: 500;
   font-size: var(--font-size-main);
   line-height: 1.62;
   text-align: var(--text-align);
+
   color: var(--second-btn-color);
   border-radius: var(--border-radius-main);
   border: none;
+
   transition-property: color, background-color, box-shadow;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);

@@ -1,6 +1,7 @@
 .customer__container {
   padding-top: 60px;
   padding-bottom: 60px;
+
   @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -14,6 +15,7 @@
   text-align: var(--text-align);
   letter-spacing: var(--letter-spacing-main);
   color: var(--second-title-color);
+
   @include desktop {
     margin-bottom: 50px;
   }
@@ -38,12 +40,15 @@
 .customer__link {
   width: 100%;
   height: 92px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   color: #afb1b8;
   border-radius: var(--border-radius-main);
   border: var(--border) #afb1b8;
+
   transition-property: color, border, outline-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);

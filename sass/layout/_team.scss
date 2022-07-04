@@ -1,6 +1,5 @@
 .team {
   background-color: #f5f4fa;
-  // margin-top: 60px;
 }
 
 .team__title {
@@ -25,6 +24,7 @@
 
 .team__item {
   width: 100%;
+
   @include tablet {
     width: calc((100% - 60px) / 2);
   }
@@ -60,6 +60,7 @@
   &__position {
     margin-top: 10px;
     margin-bottom: 16px;
+
     font-size: var(--font-size-main);
     line-height: 1.18;
     text-align: center;

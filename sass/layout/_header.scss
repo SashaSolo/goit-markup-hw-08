@@ -92,6 +92,7 @@
 .contacts {
   display: none;
   margin-left: auto;
+
   @include tablet {
     display: block;
   }
