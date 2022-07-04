@@ -1096,7 +1096,7 @@ body {
   position: absolute;
   padding: 10%;
   top: 0;
-  height: 100vh;
+  height: 100%;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
@@ -1107,10 +1107,10 @@ body {
   transition-property: transform;
   transition-duration: var(--transition-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: scroll;
 }
 .project-card:hover .project-card__text, .project-card:focus .project-card__text {
   transform: translateY(0);
+  overflow-y: auto;
 }
 
 .card-about {
