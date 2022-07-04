@@ -1,7 +1,7 @@
 .project__list-btn {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 15px 8px;
   margin-bottom: 40px;
 
   @include tablet {
@@ -13,13 +13,11 @@
   }
 }
 
-.project__item-btn {
-  margin-bottom: 15px;
-}
-
 .project__btn {
   height: 38px;
   padding: 6px 22px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: inherit;
   font-weight: 500;
   font-size: var(--font-size-main);

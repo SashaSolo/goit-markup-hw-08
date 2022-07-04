@@ -84,7 +84,6 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -164,6 +163,7 @@ body {
   justify-content: space-between;
   height: 100%;
   padding-left: 40px;
+  padding-bottom: 40px;
   overflow-y: auto;
 }
 .mob-menu .container::-webkit-scrollbar {
@@ -290,9 +290,6 @@ body {
 
 .backdrop {
   position: fixed;
-  margin: 94px 15px;
-  width: 100vw;
-  height: 100vh;
   width: 100%;
   height: 100%;
   top: 0;
@@ -319,13 +316,18 @@ body {
   padding: 40px;
   top: 50%;
   left: 50%;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  max-width: 450px;
   background-color: var(--background-color-light);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: var(--border-radius-main);
   transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform 500ms;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 
 .close-btn {
@@ -925,6 +927,7 @@ body {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -1091,7 +1094,7 @@ body {
 }
 .project-card__text {
   position: absolute;
-  padding: 63px 24px;
+  padding: 10%;
   top: 0;
   height: 100vh;
   font-weight: 400;
@@ -1104,8 +1107,9 @@ body {
   transition-property: transform;
   transition-duration: var(--transition-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
-.project-wrap__link:hover .project-card__text, .project-wrap__link:focus .project-card__text {
+.project-card:hover .project-card__text, .project-card:focus .project-card__text {
   transform: translateY(0);
 }
 
@@ -1129,7 +1133,7 @@ body {
 .project__list-btn {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 15px 8px;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
@@ -1144,13 +1148,11 @@ body {
   }
 }
 
-.project__item-btn {
-  margin-bottom: 15px;
-}
-
 .project__btn {
   height: 38px;
   padding: 6px 22px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: inherit;
   font-weight: 500;
   font-size: var(--font-size-main);
