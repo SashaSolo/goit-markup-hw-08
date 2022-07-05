@@ -945,6 +945,7 @@ body {
 }
 
 .team__title {
+  margin-bottom: 30px;
   font-size: 28px;
   line-height: 1.1785714286;
   text-align: var(--text-align);
@@ -952,13 +953,13 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .team__title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.1666666667;
   }
 }
 
 .team__list {
-  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1008,17 +1009,6 @@ body {
   line-height: 1.18;
   text-align: center;
   color: var(--main-text-color);
-}
-
-.customer__container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .customer__container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .customer__title {
@@ -1080,17 +1070,6 @@ body {
   width: 106px;
   height: 60px;
   fill: currentColor;
-}
-
-.projects {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .projects {
-    margin-top: 94px;
-    margin-bottom: 94px;
-  }
 }
 
 .project-grid__list {
