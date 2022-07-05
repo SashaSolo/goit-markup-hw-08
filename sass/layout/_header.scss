@@ -131,6 +131,13 @@
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
 
+    @include desktop {
+      font-size: 14px;
+      line-height: calc(16 / 14);
+      margin-right: 10px;
+      fill: currentColor;
+    }
+
     &:hover,
     &:focus {
       color: var(--accent-color);

@@ -1,6 +1,6 @@
 .features__section {
   @include desktop {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -49,11 +49,18 @@
 }
 
 .features__title {
+  text-align: center;
   font-size: var(--font-size-second);
   line-height: 1.14;
   letter-spacing: var(--letter-spacing-main);
   text-transform: uppercase;
   color: var(--second-title-color);
+  @include tablet {
+    text-align: start;
+  }
+  @include desktop {
+    text-align: start;
+  }
 }
 
 .features__about {
